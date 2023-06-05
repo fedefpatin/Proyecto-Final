@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>flecha.png</file>
+        <file>indigena.png</file>
+        <file>minero.png</file>
+        <file>rock.png</file>
+    </qresource>
+</RCC>
