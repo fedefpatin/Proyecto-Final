@@ -4,7 +4,7 @@
 #include <QGraphicsItem>
 #include <QPainter>
 
-#define gr -0.0005
+#define gr -0.0001
 #define delta 0.1
 #define pi 3.1416
 

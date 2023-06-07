@@ -2,12 +2,12 @@
 
 QRectF Extra::boundingRect() const
 {
-    return QRectF(-6*r,-1.5*r,12*r,6*r);
+    return QRectF(-6*r,-1.5*r,22*r,11*r);
 }
 
 void Extra::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-   painter->drawPixmap(-6*r,-1.5*r,12*r,6*r,QPixmap(":/minero"));
+   painter->drawPixmap(-6*r,-1.5*r,22*r,11*r,QPixmap(":/minero"));
    //painter->drawRect(boundingRect());
 }
 
@@ -15,7 +15,7 @@ Extra::Extra(double x, double y)
 {
     posx=x;
     posy=y;
-    v=0;
+    v=-2;
     r=5;
     setPos(posx,-posy);
 }
@@ -23,9 +23,9 @@ Extra::Extra(double x, double y)
 void Extra::ActualizaPos()
 {
     CalculaVelocidad();
-    if(posy-r<=-225)
+    if(posx-r<=-225)
         v=-v;
-    posy+=v*delta+(0.5*gr*delta*delta);
+    posx+=v*delta+(0.5*gr*delta*delta);
     setPos(-posx,-posy);
 }
 

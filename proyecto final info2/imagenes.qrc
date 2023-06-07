@@ -4,5 +4,7 @@
         <file>indigena.png</file>
         <file>minero.png</file>
         <file>rock.png</file>
+        <file>tamFondo1.jpg</file>
+        <file>fondoCC.jpg</file>
     </qresource>
 </RCC>

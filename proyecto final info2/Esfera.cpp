@@ -21,7 +21,7 @@ Esfera::Esfera()
     i=rand()%2;
     vx=25*L[i];
     vx=25*M[i];
-    vy=40;
+    vy=60;
     r=10;
     setPos(-1000,-1000);
 }

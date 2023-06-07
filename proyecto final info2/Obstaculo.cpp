@@ -2,12 +2,12 @@
 
 QRectF Obstaculo::boundingRect() const
 {
-    return QRectF(-r,-r,2*r,2*r);
+    return QRectF(-r,-r,6*r,6*r);
 }
 
 void Obstaculo::paint(QPainter *painter, const QStyleOptionGraphicsItem *option, QWidget *widget)
 {
-    painter->drawPixmap(-r,-r,2*r,2*r,QPixmap(":/rock"));
+    painter->drawPixmap(-r,-r,6*r,6*r,QPixmap(":/rock"));
     //painter->drawEllipse(boundingRect());
 }
 Obstaculo::Obstaculo()
